@@ -1,0 +1,6 @@
+{
+  "name": "Arkos Benefícios",
+  "description": "Landing page de alta conversão para cotação e comparação de planos de saúde empresariais, familiares e individuais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
