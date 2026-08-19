@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LOGO_ASSETS } from '../assets/logos';
 
 interface ArkosLogoProps {
   className?: string;
@@ -13,12 +14,9 @@ export const ArkosLogo: React.FC<ArkosLogoProps> = ({
 }) => {
   const [imgError, setImgError] = useState(false);
   const isLight = variant === "light";
-  
-  // For dark background (variant="light"), use arkos-white.png
-  // For light background (variant="dark"), use arkos-trimmed.png
-  const logoSrc = isLight ? "/assets/logos/arkos-white.png" : "/assets/logos/arkos-trimmed.png";
+  const logoSrc = isLight ? LOGO_ASSETS.arkosWhite : LOGO_ASSETS.arkosDark;
   const primaryText = isLight ? "#FFFFFF" : "#06110C";
-  const subText = isLight ? "#A7F3D0" : "#076633";
+  const subText = isLight ? "#34D399" : "#076633";
 
   return (
     <div className={`inline-flex items-center gap-2 select-none ${className}`}>
@@ -30,28 +28,34 @@ export const ArkosLogo: React.FC<ArkosLogoProps> = ({
           onError={() => setImgError(true)}
         />
       ) : (
-        /* Dynamic SVG Vector Fallback */
         <div className="flex items-center gap-2.5">
           <svg
-            viewBox="0 0 48 48"
+            viewBox="0 0 40 40"
             className="h-8 w-8 shrink-0"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
-              <linearGradient id="arkosGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <linearGradient id="arkosGradBrand" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#10B981" />
                 <stop offset="100%" stopColor="#076633" />
               </linearGradient>
             </defs>
-            <path
-              d="M24 4L42 14V34L24 44L6 34V14L24 4Z"
-              fill="url(#arkosGrad1)"
+            <polygon
+              points="20,2 36,11 36,29 20,38 4,29 4,11"
+              fill="url(#arkosGradBrand)"
             />
+            <path
+              d="M20 9L29 26H23.5L20 18.5L16.5 26H11L20 9Z"
+              fill="#FFFFFF"
+              opacity="0.95"
+            />
+            <circle cx="20" cy="27" r="2.2" fill="#FFFFFF" />
           </svg>
+
           <div className="flex flex-col leading-none">
             <span
-              className="font-extrabold tracking-tight text-xl font-sans"
+              className="font-black tracking-tight text-xl font-sans"
               style={{ color: primaryText }}
             >
               arkos

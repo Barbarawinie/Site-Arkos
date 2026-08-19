@@ -6,7 +6,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'SulAmérica',
     category: 'Nacional • Ampla Rede',
     description: 'Tradição e excelência em planos de saúde empresariais e individuais.',
-    logoUrl: '/assets/logos/sulamerica.png',
     accentColor: '#FF6B00'
   },
   {
@@ -14,7 +13,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'Bradesco Saúde',
     category: 'Referência Hospitalar',
     description: 'Ampla cobertura hospitalar e os melhores centros médicos do país.',
-    logoUrl: '/assets/logos/bradesco.png',
     accentColor: '#CC0000'
   },
   {
@@ -22,7 +20,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'Porto Saúde',
     category: 'Cuidado & Tecnologia',
     description: 'Programas de prevenção, telemedicina 24h e reembolso ágil.',
-    logoUrl: '/assets/logos/porto.png',
     accentColor: '#0055A5'
   },
   {
@@ -30,7 +27,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'Amil',
     category: 'Rede Própria & Credenciada',
     description: 'Diversas categorias de planos para atender de MEI a grandes empresas.',
-    logoUrl: '/assets/logos/amil.png',
     accentColor: '#00A3E0'
   },
   {
@@ -38,7 +34,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'Unimed',
     category: 'Maior Cooperativa Médica',
     description: 'Presença em todo o território nacional e médicos cooperados dedicados.',
-    logoUrl: '/assets/logos/unimed.png',
     accentColor: '#00995D'
   },
   {
@@ -46,7 +41,6 @@ export const PARTNERS_DATA: PartnerOperator[] = [
     name: 'Hapvida NotreDame',
     category: 'Custo-Benefício',
     description: 'Excelente custo-benefício com robusta rede própria integrada.',
-    logoUrl: '/assets/logos/hapvida-gndi.png',
     accentColor: '#003399'
   },
   {
